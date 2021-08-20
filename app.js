@@ -251,6 +251,14 @@ function requestSearch(params, resultCallback) {
 // Render file list
 function list(path) {
   var content = `<div class="container">${UI.fixed_header ?'<br>': ''}
+	<div id="fitgirlAlert">
+		<div class="alert alert-danger">
+			<strong>Special NOTE : This site is not official site of fitgirl repacks and is only used as a mirror to download fitgirl repacks. For installation instructions and other details about repacks please visit the official fitgirl repacks site fitgirl-repacks.site</strong><br><br>
+			The site, fitgirl-repacks.site is THE ONLY official site of fitgirl repacks. Every single FG repack installer has a link inside, which leads to fitgirl-repacks.site.<br>
+			<img loading="lazy" class="aligncenter size-full wp-image-14518" style="margin-bottom: -14px;" src="https://i.ibb.co/q5mKDc8/screen-setup.jpg" alt="" width="495" height="107" sizes="(max-width: 495px) 100vw, 495px"><br><br>
+			ALL other “mirrors” (fitgirlrepacks.co, fitgirl-repacks.cc, fitgirl-repack.com, etc.) are fakes, made to infect you with malware, show you tons of ads and get your money as donations. Don’t fall for them during your google sessions, just bookmark fitgirl-repacks.site and come here directly.
+		</div>
+	</div>
 	<div id="update"></div>
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
