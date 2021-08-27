@@ -261,6 +261,9 @@ function requestSearch(params, resultCallback) {
 function list(path) {
   var content = `<div class="container">${UI.fixed_header ?'<br>': ''}
 	<div id="fitgirlAlert">
+		<div class="alert alert-info">
+			<strong>For the security reasons, all the request from our previous domain repacks.fitgirl.workers.dev will automatically be directed to this domain repacks.ga. Please dont use previous domain anymore to access the content. It will automatically be destroyed in few days</strong>
+		</div>
 		<div class="alert alert-danger">
 			<strong>Special NOTE : This site is not an official site of fitgirl repacks and is only used as a mirror to download fitgirl repacks. For installation instructions and other details about repacks please visit the official fitgirl repacks site fitgirl-repacks.site</strong>
 		</div>
