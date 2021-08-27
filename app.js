@@ -261,13 +261,28 @@ function requestSearch(params, resultCallback) {
 function list(path) {
   var content = `<div class="container">${UI.fixed_header ?'<br>': ''}
 	<div id="fitgirlAlert">
-		<div class="alert alert-info">
-			<strong>For the security reasons, all the request from our previous domain repacks.fitgirl.workers.dev will automatically be directed to this domain repacks.ga. Please dont use previous domain anymore to access the content. It will automatically be destroyed in few days</strong>
+		<div class="alert alert-info" id="dodi">
+			<strong>Special NOTE : This site is not an official site of DODI repacks and is only used as a mirror to download DODI repacks. For installation instructions and other details about repacks please visit the official DODI repacks site dodi-repacks.site</strong>
 		</div>
-		<div class="alert alert-danger">
+		<div class="alert alert-danger" id="fitgirl">
 			<strong>Special NOTE : This site is not an official site of fitgirl repacks and is only used as a mirror to download fitgirl repacks. For installation instructions and other details about repacks please visit the official fitgirl repacks site fitgirl-repacks.site</strong>
 		</div>
 	</div>
+	<script>
+		if(document.title.toLowerCase().includes('dodi'))
+		{
+			$('#dodi').show();
+		}
+		else if(document.title.toLowerCase().includes('fitgirl'))
+		{
+			$('#fitgirl').show();
+		}
+		else
+		{
+			$('#fitgirl').hide();
+			$('#dodi').hide();
+		}
+	</script>
 	<div id="update"></div>
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
     <div class="${UI.path_nav_alert_class} d-flex align-items-center" role="alert" style="margin-bottom: 0; padding-bottom: 0rem;">
