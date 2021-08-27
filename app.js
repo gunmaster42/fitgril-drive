@@ -269,19 +269,22 @@ function list(path) {
 		</div>
 	</div>
 	<script>
-		if(document.title.toLowerCase().includes('dodi'))
-		{
-			$('#dodi').show();
-		}
-		else if(document.title.toLowerCase().includes('fitgirl'))
-		{
-			$('#fitgirl').show();
-		}
-		else
-		{
-			$('#fitgirl').hide();
-			$('#dodi').hide();
-		}
+	
+		setTimeout(function(){
+			if(document.title.toLowerCase().includes('dodi'))
+			{
+				$('#dodi').show();
+			}
+			else if(document.title.toLowerCase().includes('fitgirl'))
+			{
+				$('#fitgirl').show();
+			}
+			else
+			{
+				$('#fitgirl').hide();
+				$('#dodi').hide();
+			}
+		},1000);
 	</script>
 	<div id="update"></div>
     <div id="head_md" style="display:none; padding: 20px 20px;"></div>
